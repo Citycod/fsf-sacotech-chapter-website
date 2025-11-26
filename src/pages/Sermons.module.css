@@ -1,0 +1,172 @@
+.sermonsPage {
+    background-color: var(--color-gray-100);
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--color-black);
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.controls {
+    margin-bottom: 3rem;
+}
+
+.searchBar {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.searchBar input:focus {
+    border-color: var(--color-royal-blue);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.categoryBtn {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.categoryBtn:hover,
+.categoryBtn.active {
+    background-color: var(--color-royal-blue);
+    color: white;
+    border-color: var(--color-royal-blue);
+}
+
+.resourceList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.resourceItem {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease;
+}
+
+.resourceItem:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.resourceIcon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-gray-100);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-royal-blue);
+    flex-shrink: 0;
+}
+
+.resourceInfo {
+    flex-grow: 1;
+}
+
+.resourceInfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--color-black);
+}
+
+.preacher {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.tag {
+    background: var(--color-gray-100);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    color: var(--color-black);
+    font-weight: 500;
+}
+
+.actions {
+    flex-shrink: 0;
+}
+
+.noResults {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .resourceItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .actions {
+        width: 100%;
+    }
+
+    .actionBtn {
+        width: 100%;
+        text-align: center;
+    }
+}

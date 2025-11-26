@@ -1,0 +1,64 @@
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gradient overlays to indicate scrollable content */
+.carouselContainer::before,
+.carouselContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 2rem;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.carouselContainer::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-white), transparent);
+}
+
+.carouselContainer::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-white), transparent);
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    user-select: none;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}
+
+.innerCarousel {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+    /* Add padding to avoid cutting off shadows */
+}
+
+.instruction {
+    text-align: center;
+    margin-top: 1rem;
+    color: #999;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .instruction {
+        display: block;
+    }
+
+    .carouselContainer::before,
+    .carouselContainer::after {
+        width: 40px;
+    }
+}

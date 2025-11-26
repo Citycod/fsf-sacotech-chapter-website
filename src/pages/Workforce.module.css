@@ -1,0 +1,123 @@
+.workforcePage {
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--color-red), #b00029);
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-royal-blue);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    background: var(--color-gray-100);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: var(--color-royal-blue);
+}
+
+.iconBox {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--color-royal-blue);
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta {
+    background: var(--color-black);
+    color: white;
+    padding: 4rem;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23222222' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-yellow);
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.applyBtn {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .cta {
+        padding: 2rem;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+}

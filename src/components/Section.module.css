@@ -1,0 +1,11 @@
+.section {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+}

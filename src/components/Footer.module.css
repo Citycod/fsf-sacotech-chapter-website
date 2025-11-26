@@ -1,0 +1,117 @@
+.footer {
+    background-color: var(--color-black);
+    color: white;
+    padding: 4rem 0 0;
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brandSection p {
+    color: #aaa;
+    margin: 1rem 0 1.5rem;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logoImage {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.logoTitle {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.socials a:hover {
+    background: var(--color-royal-blue);
+    transform: translateY(-3px);
+}
+
+.linkSection h3,
+.contactSection h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.linkSection h3::after,
+.contactSection h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-yellow);
+}
+
+.linkSection ul li {
+    margin-bottom: 0.8rem;
+}
+
+.linkSection ul li a {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.linkSection ul li a:hover {
+    color: var(--color-yellow);
+    padding-left: 5px;
+}
+
+.contactItem {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+
+.contactIcon {
+    color: var(--color-yellow);
+    margin-top: 5px;
+}
+
+.bottomBar {
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}

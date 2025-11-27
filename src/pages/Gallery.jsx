@@ -24,7 +24,7 @@ const Gallery = () => {
         { id: 4, src: image4, category: 'Campus Invasion' },
         { id: 5, src: image5, category: 'Sunday Service' },
         
-
+];
     const filteredImages = activeCategory === 'All'
         ? images
         : images.filter(img => img.category === activeCategory);

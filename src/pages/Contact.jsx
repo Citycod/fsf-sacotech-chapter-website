@@ -47,7 +47,7 @@ const Contact = () => {
                                     <div className={styles.iconBox}><FaPhone /></div>
                                     <div>
                                         <h3>Call Us</h3>
-                                        <p>+234 7048760133<br>+234 8077561067<br/>+234 8127122305</p>
+                                        <p>+234 7048760133<br />+234 8077561067<br />+234 8127122305</p>
                                     </div>
                                 </div>
 

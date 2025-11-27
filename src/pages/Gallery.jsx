@@ -4,6 +4,13 @@ import Section from '../components/Section';
 import { FaTimes } from 'react-icons/fa';
 import styles from './Gallery.module.css';
 
+// Import images from assets folder
+import image1 from '../assets/gallery 1.jpg';
+import image2 from '../assets/gallery 2.jpg';
+import image3 from '../assets/gallery 3.jpg';
+import image4 from '../assets/gallery 4.jpg';
+import image5 from '../assets/gallery 5.jpg';
+
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [activeCategory, setActiveCategory] = useState('All');
@@ -11,15 +18,12 @@ const Gallery = () => {
     const categories = ['All', 'Outreach', 'Bible Study', 'Sunday Service', 'Campus Invasion'];
 
     const images = [
-        { id: 1, src: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Sunday Service' },
-        { id: 2, src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Bible Study' },
-        { id: 3, src: 'https://images.unsplash.com/photo-1459749411177-0473ef71607b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Outreach' },
-        { id: 4, src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Campus Invasion' },
-        { id: 5, src: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Sunday Service' },
-        { id: 6, src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Outreach' },
-        { id: 7, src: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Bible Study' },
-        { id: 8, src: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', category: 'Campus Invasion' },
-    ];
+        { id: 1, src: image1, category: 'Sunday Service' },
+        { id: 2, src: image2, category: 'Bible Study' },
+        { id: 3, src: image3, category: 'Outreach' },
+        { id: 4, src: image4, category: 'Campus Invasion' },
+        { id: 5, src: image5, category: 'Sunday Service' },
+        
 
     const filteredImages = activeCategory === 'All'
         ? images
@@ -63,7 +67,7 @@ const Gallery = () => {
                                     className={styles.imageItem}
                                     onClick={() => setSelectedImage(image)}
                                 >
-                                    <img src={image.src} alt={`Gallery ${image.id}`} />
+                                    <img src={image.src} alt={`${image.category} event`} />
                                     <div className={styles.imageOverlay}>
                                         <span>View</span>
                                     </div>
@@ -85,7 +89,7 @@ const Gallery = () => {
                         onClick={() => setSelectedImage(null)}
                     >
                         <div className={styles.lightboxContent} onClick={e => e.stopPropagation()}>
-                            <img src={selectedImage.src} alt="Full size" />
+                            <img src={selectedImage.src} alt={`${selectedImage.category} event - full size`} />
                             <button className={styles.closeBtn} onClick={() => setSelectedImage(null)}>
                                 <FaTimes />
                             </button>

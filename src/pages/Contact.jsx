@@ -39,7 +39,7 @@ const Contact = () => {
                                     <div className={styles.iconBox}><FaEnvelope /></div>
                                     <div>
                                         <h3>Email Us</h3>
-                                        <p>info@fsfsacotech.org<br />support@fsfsacotech.org</p>
+                                        <p>fsfsacoetec@gmail.com</p>
                                     </div>
                                 </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                                     <div className={styles.iconBox}><FaPhone /></div>
                                     <div>
                                         <h3>Call Us</h3>
-                                        <p>+234 123 456 7890<br />+234 098 765 4321</p>
+                                        <p>+234 7048760133<br />+234 8077561067<br />+234 8127122305</p>
                                     </div>
                                 </div>
 

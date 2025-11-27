@@ -71,7 +71,7 @@ const Workforce = () => {
                         <h2>Ready to Labor for the Master?</h2>
                         <p>Click the button below to fill the registration form.</p>
                         <Button
-                            to="https://docs.google.com/forms"
+                            to="https://docs.google.com/forms/d/e/1FAIpQLSdjpQ7PvQunURWVkJw7e6-fPi3rBUE5VAQH6eYd2_HhzR-BRQ/viewform?usp=header"
                             variant="primary"
                             className={styles.applyBtn}
                             target="_blank"

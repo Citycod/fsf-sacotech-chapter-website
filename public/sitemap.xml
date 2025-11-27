@@ -3,6 +3,47 @@
 
   <url>
     <loc>https://www.fsfsacoetec.site/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/events</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/gallery</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/leadership</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/programs</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/sermons</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fsfsacoetec.site/workforce</loc>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

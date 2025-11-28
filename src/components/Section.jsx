@@ -5,7 +5,7 @@ import styles from './Section.module.css';
 
 const Section = ({ children, className = '', id = '' }) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.2 });
+    const isInView = useInView(ref, { once: true });
 
     return (
         <section ref={ref} className={`${styles.section} ${className}`} id={id}>

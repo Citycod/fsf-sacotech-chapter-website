@@ -108,3 +108,13 @@
     font-size: 0.9rem;
     line-height: 1.5;
 }
+
+@media (max-width: 600px) {
+    .imageWrapper {
+        height: 200px;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+}

@@ -70,34 +70,20 @@ const Home = () => {
 
     const testimonies = [
         {
-            text: "FSF has been a home away from home for me. I've grown spiritually and made amazing friends who share the same passion for Christ.",
-            name: "Chidinma Okafor",
-            course: "Computer Science, 300L",
-            image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+            text: "I thank God for preserving my life from the beginning of the year.",
+            name: "Akinya Samson temitayo",
         },
         {
-            text: "Before joining FSF, I was struggling with my faith. But through the Bible studies and fellowship, I've discovered my purpose and calling.",
-            name: "Oluwaseun Adeyemi",
-            course: "Electrical Engineering, 400L",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+            text: "I have always heard about people doing testimony of not writing exam and getting results but I never seems to believe untill it eventually happened to me. It's was exam period when I was unable to pay my school fees,the first day I used someone receipt to write exam.the second day I paid my school fees but paid late and couldn't meet up with the exam.i cried and cried but later accept my fate and just pray to God for the remaining results to come out well.God in his mercy surprised me beyond my expectations,my results was excellent even in the exam I didn't get to write the result also came out .I always thank God every day for this because it's indeed a miracle.",
+            name: "Oyebanji fisayo",
         },
         {
-            text: "The prayer meetings have transformed my life completely. I've experienced God's power in ways I never imagined possible.",
-            name: "Blessing Nwankwo",
-            course: "Mass Communication, 200L",
-            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+            text: "I thank God for the salvation of my soul, I give all glory to God for his faithfulness in my life through the journey of my education, it been God all through and for his good doings over my lives.",
+            name: "Okoro Favour Chinemere",
         },
         {
-            text: "FSF taught me how to balance academics with spiritual growth. I'm excelling in my studies while growing deeper in God's word.",
-            name: "Emeka Eze",
-            course: "Mechanical Engineering, 500L",
-            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
-        },
-        {
-            text: "The worship nights are absolutely incredible! I've encountered God's presence in such a powerful way through this fellowship.",
-            name: "Amarachi Okonkwo",
-            course: "Medicine & Surgery, 300L",
-            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+            text: "Praise God I want to thank God for the journey of my TP He has been good to me He did not put me to shame My supervisor came and everything went smoothly During the TP I did not have bad record I give God all the glory and adoration Praise the Lord.",
+            name: "Adediran Rebecca Adeola",
         },
     ];
 
@@ -177,11 +163,7 @@ const Home = () => {
                             <div key={index} className={styles.testimonyCard}>
                                 <p className={styles.testimonyText}>"{testimony.text}"</p>
                                 <div className={styles.testimonyAuthor}>
-                                    <img src={testimony.image} alt={testimony.name} />
-                                    <div>
-                                        <h4>{testimony.name}</h4>
-                                        <span>{testimony.course}</span>
-                                    </div>
+                                    <h4>{testimony.name}</h4>
                                 </div>
                             </div>
                         ))}

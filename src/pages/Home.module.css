@@ -111,44 +111,35 @@
 }
 
 .testimonyCard {
-    min-width: 350px;
+    min-width: 550px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 2rem;
-    border-radius: 20px;
+    padding: 1.5rem;
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .testimonyText {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-style: italic;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .testimonyAuthor {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-
-.testimonyAuthor img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--color-yellow);
+    margin-top: 0.5rem;
 }
 
 .testimonyAuthor h4 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
     color: var(--color-yellow);
-}
-
-.testimonyAuthor span {
-    font-size: 0.8rem;
-    opacity: 0.8;
+    font-weight: 600;
 }
 
 /* Newsletter Section */
@@ -230,5 +221,9 @@
 
     .workforceContent h2 {
         font-size: 2rem;
+    }
+
+    .testimonyCard {
+        min-width: 300px;
     }
 }

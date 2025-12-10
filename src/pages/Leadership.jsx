@@ -14,6 +14,7 @@ import FollowupCordImg from '../assets/Followupcord.jpg';
 import SisterCordImg from '../assets/Sister Cord.jpg';
 import TresurerImg from '../assets/Tresurer.jpg';
 import WelfareCordImg from '../assets/Welfare Cord.jpg';
+import GenSecImg from '../assets/Gen Sec.jpg';
 
 const Leadership = () => {
     const leaders = [
@@ -28,7 +29,7 @@ const Leadership = () => {
             id: 2,
             name: "Bro Victor",
             position: "Gen Sec",
-            image: '',
+            image: GenSecImg,
             description: "Managing the secretariat and ensuring smooth administration."
         },
         {

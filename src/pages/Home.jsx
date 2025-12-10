@@ -37,36 +37,7 @@ const Home = () => {
         },
     ];
 
-    const upcomingEvents = [
-        {
-            title: "Fresher's Night",
-            description: "Join us for a night of intense worship and prayer.",
-            day: "15",
-            month: "DEC",
-            image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        },
-        {
-            title: "Campus Evangelism Outreach",
-            description: "Taking the gospel to every corner of the campus.",
-            day: "20",
-            month: "DEC",
-            image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        },
-        {
-            title: "End of Year Thanksgiving",
-            description: "Celebrating God's faithfulness throughout the year.",
-            day: "28",
-            month: "DEC",
-            image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        },
-        {
-            title: "New Year Prayer Summit",
-            description: "Starting the new year with prayer and declarations.",
-            day: "05",
-            month: "JAN",
-            image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        },
-    ];
+
 
     const testimonies = [
         {
@@ -82,7 +53,7 @@ const Home = () => {
             name: "Okoro Favour Chinemere",
         },
         {
-            text: "Praise God I want to thank God for the journey of my TP He has been good to me He did not put me to shame My supervisor came and everything went smoothly During the TP I did not have bad record I give God all the glory and adoration Praise the Lord.",
+            text : "Praise God I want to thank God for the journey of my TP He has been good to me He did not put me to shame My supervisor came and everything went smoothly During the TP I did not have bad record I give God all the glory and adoration Praise the Lord.",
             name: "Adediran Rebecca Adeola",
         },
     ];
@@ -131,28 +102,7 @@ const Home = () => {
                 </div>
             </Section>
 
-            {/* Upcoming Events Section */}
-            <Section className={styles.eventsSection}>
-                <div className="container">
-                    <h2 className="section-title text-center">Upcoming Events</h2>
-                    <Carousel interval={15000}>
-                        {upcomingEvents.map((event, index) => (
-                            <div key={index} className={styles.eventCard}>
-                                <div className={styles.eventDate}>
-                                    <span className={styles.day}>{event.day}</span>
-                                    <span className={styles.month}>{event.month}</span>
-                                </div>
-                                <img src={event.image} alt={event.title} />
-                                <div className={styles.eventInfo}>
-                                    <h3>{event.title}</h3>
-                                    <p>{event.description}</p>
-                                    <Button to="/events" variant="outlineDark" className={styles.eventBtn}>Details</Button>
-                                </div>
-                            </div>
-                        ))}
-                    </Carousel>
-                </div>
-            </Section>
+
 
             {/* Testimonies Section */}
             <Section className={styles.testimoniesSection}>
